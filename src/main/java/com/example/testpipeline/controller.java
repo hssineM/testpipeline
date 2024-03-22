@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class controller {
-    @GetMapping("test2355")
+    @GetMapping("test2355999git")
     public String test()
     {
         return "test secce";

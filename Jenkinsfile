@@ -2,17 +2,16 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout Code') {
+        stage('Checkout') {
             steps {
-                git branch: 'master',
-                   credentialsId: 'your-credentials-id',
-                   url: 'https://github.com/hssineM/testpipeline.git'
+                git branch: 'master', credentialsId: 'your-git-credentials-id', url: 'https://your-github-username@github.com/your-repo.git'
             }
         }
         stage('Build') {
             steps {
-                sh 'mvn clean install' // Replace with your build command (e.g., npm install, etc.)
+                // Build commands for your project (e.g., mvn clean install, gradle build)
             }
         }
+        // Add additional stages for testing, deployment, etc.
     }
 }
