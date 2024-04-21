@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', credentialsId: 'your-git-credentials-id', url: 'https://github.com/hssineM/testpipeline.git'
+                git branch: 'master', credentialsId: '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', url: 'https://github.com/hssineM/testpipeline.git'
             }
         }
         stage('Build') {
