@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', credentialsId: 'your-git-credentials-id', url: 'https://your-github-username@github.com/your-repo.git'
+                git branch: 'master', credentialsId: 'your-git-credentials-id', url: 'https://github.com/hssineM/testpipeline.git'
             }
         }
         stage('Build') {
